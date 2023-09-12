@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import LotteryResultNumberEditor from './components/LotteryResultNumberEditor/LotteryResultNumberEditor';
+import LotteryResultNumberShow from './components/LotteryResultNumberShow/LotteryResultNumberShow';
 
 function App() {
   return (
     <div >
-      <LotteryResultNumberEditor/>
+      <LotteryResultNumberShow/>
     </div>
   );
 }

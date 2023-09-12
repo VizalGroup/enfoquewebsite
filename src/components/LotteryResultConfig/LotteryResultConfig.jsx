@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function LotteryResultNumberEditor() {
+export default function LotteryResultConfig() {
   return (
     <div>
-      hola
+      
     </div>
   )
 }
