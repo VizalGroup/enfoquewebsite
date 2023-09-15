@@ -3,12 +3,16 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import LotteryResultNumberShow from "./components/LotteryResultNumberShow/LotteryResultNumberShow";
 import PaymentMethods from "./components/PaymentMethods/PaymentMethods";
+import Nav from '../src/components/Nav/Nav'
+import Home from './components/Home/Home';
 
 function App() {
   return (
     <div>
-      <LotteryResultNumberShow />
+      <Nav/>
       <Routes>
+      <Route path='/' element={<Home/>}/>
+     <Route path='/loterry' element={<LotteryResultNumberShow/>}/>
         <Route path="/payment" element={<PaymentMethods />} />
       </Routes>
     </div>

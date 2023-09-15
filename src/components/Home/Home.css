@@ -1,0 +1,6 @@
+.img{
+    width: 100%;
+    filter: grayscale(50%) blur(3px);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%);
+  
+}
