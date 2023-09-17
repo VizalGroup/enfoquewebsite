@@ -23,14 +23,14 @@ useEffect(()=>{
 },[])
 
   return (
-<div className={style.container} >
-      <Card style={{background:'orange'}} className="text-center">
-        <Card.Header style={{color:'whitesmoke'}}>Resultado de la Lotería</Card.Header>
+<div  >
+      <Card style={{background:'white'}} className="text-center">
+        <Card.Header style={{color:'orange'}}>Resultado de la Lotería</Card.Header>
         <Card.Body>
           {data.map((item, index) => (
             <div key={index}>
-              <Card.Title style={{color:'whitesmoke'}}>Número Ganador:</Card.Title>
-              <Card.Text style={{color:'whitesmoke'}}>{item.winner}</Card.Text>
+              <Card.Title style={{color:'orange'}}>Número Ganador:</Card.Title>
+              <Card.Text style={{color:'orange'}}>{item.winner}</Card.Text>
               <Card.Footer  className="text-muted">{item.fecha}</Card.Footer>
               </div>
               ))}
