@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import axios from 'axios';
+import style from './LotteryNumber.module.css'
 
 
 export default function LotteryResultNumberShow() {
@@ -22,15 +23,15 @@ useEffect(()=>{
 },[])
 
   return (
-<div className="container mt-4">
-      <Card className="text-center">
-        <Card.Header>Resultado de la Lotería</Card.Header>
+<div className={style.container} >
+      <Card style={{background:'orange'}} className="text-center">
+        <Card.Header style={{color:'whitesmoke'}}>Resultado de la Lotería</Card.Header>
         <Card.Body>
           {data.map((item, index) => (
             <div key={index}>
-              <Card.Title>Número Ganador:</Card.Title>
-              <Card.Text>{item.winner}</Card.Text>
-              <Card.Footer className="text-muted">{item.fecha}</Card.Footer>
+              <Card.Title style={{color:'whitesmoke'}}>Número Ganador:</Card.Title>
+              <Card.Text style={{color:'whitesmoke'}}>{item.winner}</Card.Text>
+              <Card.Footer  className="text-muted">{item.fecha}</Card.Footer>
               </div>
               ))}
         </Card.Body>
