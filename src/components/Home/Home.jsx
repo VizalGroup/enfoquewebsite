@@ -1,6 +1,8 @@
 import React from 'react'
 import LotteryResultNumberShow from '../LotteryResultNumberShow/LotteryResultNumberShow'
-import pareja from '../img/pareja.jpg'
+import logo from '../img/bicienfoque.jpg'
+import PlanesHome from '../PlanesHome/PlanesHome'
+
 import './Home.css'
 
 
@@ -10,19 +12,25 @@ import './Home.css'
 
 function Home() {
   return (
-    <div >
+    <>
       <div className="img-container">
-        <img className="img" src={pareja} alt="pareja" />
+        <img className="img" src={logo} alt="pareja" />
         <div className="text-overlay">Consigue tu casa<br/>tu moto, tu auto lo que necesites.
-        <br/> 
-        
+     <div>
      <LotteryResultNumberShow/>
+
+     </div>
+  
+      
+        
        
         </div>
+        
       </div>
-      <div className="component">
-      </div>
-    </div>
+      <div >
+<PlanesHome/>
+     </div>
+      </>
   );
 }
 

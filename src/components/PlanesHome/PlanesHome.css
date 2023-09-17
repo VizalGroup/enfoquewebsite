@@ -1,0 +1,74 @@
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .card {
+    flex: 1;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Estilo de la máscara oscura inicial */
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .card:hover::before {
+    opacity: 0.6;
+  }
+  
+  /* Estilo de sobresalir al pasar el mouse */
+  .card:hover {
+    transform: scale(1.05); /* Escala ligeramente la tarjeta al pasar el mouse */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra al pasar el mouse */
+  }
+  
+  /* Estilo para el texto y el botón */
+  .card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .card-content h3 {
+    margin-bottom: 10px;
+  }
+  
+  .card-content button {
+    background-color: #ff9100d2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+  }
+  
