@@ -1,0 +1,93 @@
+.containertrabaja {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 50px;
+  }
+  
+  .trabaja {
+    flex: 1;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    /* Establece el tamaño y la posición del contenedor de fondo */
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    background: none; /* Elimina el fondo del contenedor principal */
+  }
+  
+  /* Estilo de la máscara oscura inicial */
+  .trabaja::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  .background-image {
+    background-image: url('../img/cards2.jpg'); /* Reemplaza 'tu-imagen-de-fondo.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Coloca la imagen de fondo detrás del contenido */
+  }
+  
+  .trabaja:hover::before {
+    opacity: 0.6;
+  }
+  
+  /* Estilo de sobresalir al pasar el mouse */
+ 
+  
+  /* Estilo para el texto y el botón */
+  .trabaja-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1; /* Coloca el contenido sobre la imagen de fondo */
+  }
+  
+  .trabaja-content h3 {
+    margin-bottom: 10px;
+  }
+  
+  .trabaja-content button {
+    background-color: #ff9100d2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .containertrabaja {
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 50px;
+    }
+  
+    .trabaja {
+      width: 100%;
+     
+    }
+  }
+  
+  

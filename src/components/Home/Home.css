@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,400&family=Ysabeau+SC:wght@100;300&display=swap');
 
-.container {
+.containers {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   
-  .img-container {
+  .img-containers {
     position: relative;
     flex: 1;
   }
