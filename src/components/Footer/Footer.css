@@ -1,0 +1,16 @@
+.footer{
+    background: orange;
+    display: flex;
+    justify-content: flex-start;
+    height: 130px;
+    margin-top: 100px;
+   
+}
+.redes{
+    font-size: 30px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
