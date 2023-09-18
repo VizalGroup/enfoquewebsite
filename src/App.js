@@ -5,6 +5,7 @@ import LotteryResultNumberShow from "./components/LotteryResultNumberShow/Lotter
 import PaymentMethods from "./components/PaymentMethods/PaymentMethods";
 import Nav from '../src/components/Nav/Nav'
 import Home from './components/Home/Home';
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
      <Route path='/loterry' element={<LotteryResultNumberShow/>}/>
         <Route path="/payment" element={<PaymentMethods />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }
