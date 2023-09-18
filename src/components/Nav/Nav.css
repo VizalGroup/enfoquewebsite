@@ -1,6 +1,6 @@
 
 .nav {
-    background: orange;
+    background: rgb(36, 36, 35);
     display: flex;
     justify-content: flex-start;
    
@@ -43,8 +43,13 @@
     transition: .3s ease all;
     font-size: 18px;
   }
+  .nav img {
+    width: 80px; /* Ajusta el ancho según tu preferencia */
+    height: auto; /* Ajusta la altura de forma proporcional al ancho */
+    margin-right: 20px; /* Ajusta el margen derecho para separar el logo de los elementos de navegación */
+}
   
-  .nav a.activo,
+  
 .nav a:hover {
     background: rgb(202, 150, 52);
 }

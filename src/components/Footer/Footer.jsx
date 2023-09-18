@@ -4,7 +4,7 @@ import {CiFacebook, CiInstagram} from 'react-icons/ci'
 
 function Footer() {
   return (
-    <div >
+    <div id='footer'>
       <footer className='footer'>
 soy footer
       </footer>

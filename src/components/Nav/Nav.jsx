@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Nav.css';
+import logo from '../img/logo.png'
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,6 +15,7 @@ function Nav() {
         <button className="hamburger" onClick={toggleMenu}>
           ☰
         </button>
+        <img src={logo} alt='' />
         <ul className={`nav-list ${menuOpen ? 'open' : ''}`}>
           <li>
             <a href="#" className="activo">
@@ -21,13 +23,16 @@ function Nav() {
             </a>
           </li>
           <li>
-            <a href="#">Blog</a>
+            <a href="#nuestros-planes">Nuestros Planes</a>
           </li>
           <li>
-            <a href="#">Acerca de</a>
+            <a href="#metodos-de-pago">Metodos de pago</a>
           </li>
           <li>
-            <a href="#">Contacto</a>
+            <a href="#trabaja">Trabaja con Nosotros</a>
+          </li>
+          <li>
+            <a href="#footer">Contacto</a>
           </li>
         </ul>
       </div>
