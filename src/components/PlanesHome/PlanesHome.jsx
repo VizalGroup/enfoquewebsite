@@ -36,7 +36,9 @@ function Cards() {
         <img src={card4} alt="" />
         <div className="carta-content">
           <h3>Título de la Tarjeta 2</h3>
+          <a href="/electroplan">
           <button>Botón 2</button>
+          </a>
         </div>
       </div>
       <div className='carta'>
