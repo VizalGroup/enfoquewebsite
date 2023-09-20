@@ -6,6 +6,7 @@ import PaymentMethods from "./components/PaymentMethods/PaymentMethods";
 import Nav from '../src/components/Nav/Nav'
 import Home from './components/Home/Home';
 import Footer from "./components/Footer/Footer";
+import ElectroPlan from "./components/PlanPage/ElectroPlan";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path='/' element={<Home/>}/>
      <Route path='/loterry' element={<LotteryResultNumberShow/>}/>
         <Route path="/payment" element={<PaymentMethods />} />
+        <Route path="/electroplan" element={<ElectroPlan />} />
       </Routes>
       <Footer/>
     </div>

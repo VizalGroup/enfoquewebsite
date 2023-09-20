@@ -24,13 +24,14 @@ useEffect(()=>{
 
   return (
 <div  >
+ 
       <Card style={{background:'white'}} className="text-center">
         <Card.Header style={{color:'orange'}}>Resultado de la Lotería</Card.Header>
         <Card.Body>
           {data.map((item, index) => (
             <div key={index}>
               <Card.Title style={{color:'orange'}}>Número Ganador:</Card.Title>
-              <Card.Text style={{color:'orange'}}>{item.winner}</Card.Text>
+              <Card.Text style={{color:'orange', fontSize:'24px' }}>{item.winner}</Card.Text>
               <Card.Footer  className="text-muted">{item.fecha}</Card.Footer>
               </div>
               ))}
