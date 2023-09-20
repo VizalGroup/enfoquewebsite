@@ -18,7 +18,7 @@ function Nav() {
         <img src={logo} alt='' />
         <ul className={`nav-list ${menuOpen ? 'open' : ''}`}>
           <li>
-            <a href="#" className="activo">
+            <a href="/" className="activo">
               Inicio
             </a>
           </li>
