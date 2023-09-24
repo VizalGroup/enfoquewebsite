@@ -36,7 +36,7 @@ function Home() {
     <>
       <div className="img-containers">
         <img className="img" src={logo} alt="pareja" />
-        <div className="text-overlay">Consigue tu casa<br/>tu moto, tu auto lo que necesites.</div>
+        <div className="text-overlay">Enfoca tus sueños en cuotas fijas</div>
       </div>
       <div>
         <LotteryResultNumberShow />
