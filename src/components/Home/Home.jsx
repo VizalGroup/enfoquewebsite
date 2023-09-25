@@ -6,6 +6,7 @@ import PaymentMethods from '../PaymentMethods/PaymentMethods';
 
 import './Home.css';
 import Trabaja from '../Trabaja/Trabaja';
+import Contenido from '../Contenido/Contenido';
 
 function Home() {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -41,6 +42,7 @@ function Home() {
       <div>
         <LotteryResultNumberShow />
       </div>
+      <Contenido/>
       <div id="nuestros-planes">
         <PlanesHome />
       </div>

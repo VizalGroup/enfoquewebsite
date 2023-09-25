@@ -14,15 +14,19 @@ function Cards() {
         <div className="carta">
           <img src={card1} alt="" />
           <div className="carta-content">
-            <h3>Título de la Tarjeta 1</h3>
-            <button>Botón 1</button>
+            <h3> Plan Enfoque Bici</h3>
+            <a href="/enfoquebici">
+            <button>Ver más</button>
+            </a>
           </div>
         </div>
         <div className="carta">
           <img src={card2} alt="" />
           <div className="carta-content">
-            <h3>Título de la Tarjeta 2</h3>
-            <button>Botón 2</button>
+            <h3>Plan Enfoque moto</h3>
+            <a href="/enfoquemoto">
+            <button>Ver más</button>
+            </a>
           </div>
         </div>
         <div className="carta">
