@@ -1,46 +1,49 @@
-import React from 'react';
-import mpLogo from '../img/logo-mercadopago.jpg'
-import vmLogo from "../img/visaMasterLogo.png"
-import PpLogo from "../img/logo-PayPal.png"
+import React from "react";
+import mpLogo from "../img/logo-mercadopago.jpg";
+import vmLogo from "../img/visaMasterLogo.png";
+import tbLogo from "../img/tbLogo.jpg";
+import daLogo from "../img/daLogo.png";
+import style from "./PaymentMethods.module.css";
+import Card from "react-bootstrap/Card";
 
 export default function PaymentMethods() {
-
-  // Estamos a la espera de informacion del cliente con la entidad bancaria que trabaja para desarrollar este componente, esto es un ejemplo para mostrarle en el sprint
-
+  // Estamos a la espera de información del cliente con la entidad bancaria que trabaja para desarrollar este componente, esto es un ejemplo para mostrarle en el sprint
 
   return (
-    <div className="container mt-5">
-      <h1 className="text-center">Métodos de Pago</h1>
-      <div className="row">
-        <div className="col-md-4">
-          <div className="card mb-4">
-            <img src={mpLogo} className="card-img-top" alt="Método de Pago 1" />
-            <div className="card-body">
-              <h2 className="card-title">Mercado Pago</h2>
-              <p className="card-text">Aqui esta la descripcion</p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="card mb-4">
-            <img src={vmLogo} className="card-img-top" alt="Método de Pago 2" />
-            <div className="card-body">
-              <h2 className="card-title">Tarjetas de Debito/Credito</h2>
-              <p className="card-text">Descripción del Método de Pago.</p>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-4">
-          <div className="card mb-4">
-            <img src={PpLogo} className="card-img-top" alt="Método de Pago 3" />
-            <div className="card-body">
-              <h2 className="card-title">Método de Pago 3</h2>
-              <p className="card-text">Descripción del Método de Pago 3.</p>
-            </div>
-          </div>
-        </div>
+    <div>
+      <h3 className={style.title}>Métodos de Pago</h3>
+      <div className={style.container}>
+        <Card className={style.card}>
+          <Card.Img variant="top" src={mpLogo} />
+          <Card.Body className={style.cardBody}>
+            <Card.Title className={style.cardTitle}>Mercado Pago</Card.Title>
+          </Card.Body>
+        </Card>
+        <Card className={style.card}>
+          <Card.Img variant="top" src={vmLogo} />
+          <Card.Body className={style.cardBody}>
+            <Card.Title className={style.cardTitle}>
+              Tarjeta de Crédito y Débito
+            </Card.Title>
+          </Card.Body>
+        </Card>
+        <Card className={style.card}>
+          <Card.Img variant="top" src={tbLogo} />
+          <Card.Body className={style.cardBody}>
+            <Card.Title className={style.cardTitle}>
+              Transferencia Bancaria
+            </Card.Title>
+          </Card.Body>
+        </Card>
+        <Card className={style.card}>
+          <Card.Img variant="top" src={daLogo} />
+          <Card.Body className={style.cardBody}>
+            <Card.Title className={style.cardTitle}>
+              Débito Automático
+            </Card.Title>
+          </Card.Body>
+        </Card>
       </div>
-      {/* Agrega más métodos de pago aquí */}
     </div>
   );
 }
