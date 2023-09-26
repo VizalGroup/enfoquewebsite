@@ -10,6 +10,7 @@ import ElectroPlan from "./components/PlanPage/ElectroPlan";
 import EnfoquePlan from "./components/PlanPage/EnfoquePlan";
 import EnfoqueBici from "./components/PlanPage/EnfoqueBici"
 import EnfoqueMoto from "./components/PlanPage/EnfoqueMoto"
+import TrabajaConNosotros from "./components/Trabaja/TrabajaConNosotros";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path= "/enfoqueplan" element={<EnfoquePlan />} />
         <Route path="/enfoquebici" element={<EnfoqueBici/>}/>
         <Route path="/enfoquemoto" element={<EnfoqueMoto/>}/>
+        <Route path="/trabajaconnosotros" element={<TrabajaConNosotros/>} />
       </Routes>
       <Footer/>
     </div>
