@@ -188,7 +188,7 @@ export default function TrabajaConNosotros() {
 
             <br />
             <p className={style.alert}>
-              Al hacer click en el boton enviar te redirigirá a tu correo
+              Presiona Enviar y te redirigirá a tu correo
               electronico. Por favor adjunta tu Curriculum
             </p>
             <button type="submit" className={style.button}>
