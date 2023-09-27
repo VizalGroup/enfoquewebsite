@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import LotteryResultNumberShow from '../LotteryResultNumberShow/LotteryResultNumberShow';
-import logo from '../img/bicienfoque.jpg';
 import PlanesHome from '../PlanesHome/PlanesHome';
 import PaymentMethods from '../PaymentMethods/PaymentMethods';
 
@@ -35,12 +34,8 @@ function Home() {
 
   return (
     <>
-      <div className="img-containers">
-        <img className="img" src={logo} alt="pareja" />
-        <div className="text-overlay">Enfoca tus sueños en cuotas fijas</div>
-      </div>
-      <div>
         <LotteryResultNumberShow />
+      <div>
       </div>
       <Contenido/>
       <div id="nuestros-planes">

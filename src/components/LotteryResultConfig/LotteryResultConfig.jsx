@@ -5,7 +5,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function LotteryResultConfig() {
-  const baseUrl = "http://localhost/websiteEnfoque/";
+  const baseUrl = "https://enfoqueplanes.com/websiteEnfoque/";
   const [data, setData] = useState([]);
   const [lotteryNumber, setLotteryNumber] = useState({
     winner: "",
