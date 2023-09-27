@@ -1,0 +1,34 @@
+p {
+  text-align: justify;
+}
+
+li {
+  text-align: justify;
+}
+
+.button {
+  background-color: #6ec5b8;
+  margin-top: 2vh;
+  border: none;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombras personalizadas */
+  transition: box-shadow 0.3s ease; /* Agregar transición suave a la sombra en hover */
+
+  /* Estilos adicionales en hover (por ejemplo, cambiar el tono de la sombra) */
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+
+label {
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  font-weight: bold;
+}
+
+.alert{
+  font-weight: bold;
+}
