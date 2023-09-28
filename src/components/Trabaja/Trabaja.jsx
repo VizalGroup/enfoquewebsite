@@ -9,7 +9,7 @@ function Trabaja() {
         <div className="background-image"></div> {/* Agrega un div para la imagen de fondo */}
         <div className="trabaja-content">
           <h3>Trabaja con Nosotros</h3>
-          <a href="/trabajaconnosotros">
+          <a href="/trabajahome">
 
           <button >Contactanos</button>
           </a>

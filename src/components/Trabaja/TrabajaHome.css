@@ -1,0 +1,69 @@
+/* Estilos generales */
+.trabaja-home {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .card-container-home {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en dispositivos pequeños */
+    justify-content: space-between; /* Esto hará que las tarjetas estén separadas en filas en escritorio */
+  }
+  
+  .card-home {
+    flex-basis: calc(33.33% - 20px); /* Controla el ancho de las tarjetas en escritorio */
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(182, 181, 181, 0.301);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Agrega sombra suave */
+    transition: box-shadow 0.3s ease; /* Agrega una transición suave */
+  }
+  
+  .card-home:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al pasar el mouse */
+  }
+  
+  .card-home img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-home h3 {
+    margin-top: 10px;
+  }
+  
+  .card-home button {
+    margin-top: 10px;
+    background-color: #ffa600;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .card-home button:hover {
+    background-color: #b36500;
+  }
+  
+  .card-image-home {
+    width: 100%; /* Ajusta el tamaño de la imagen al ancho de la tarjeta */
+    height: auto;
+    object-fit: cover; /* Esto ajustará la imagen para que encaje en el tamaño especificado sin deformarla */
+    border-radius: 20px;
+    transition: transform 0.3s ease; /* Agrega una transición de transformación suave */
+  }
+  
+  .card-image-home:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen al pasar el mouse */
+  }
+  
+  /* Media query para dispositivos móviles */
+  @media (max-width: 768px) {
+    .card-home {
+      flex-basis: 100%; /* Tarjetas ocuparán todo el ancho en dispositivos móviles */
+    }
+  }
+  

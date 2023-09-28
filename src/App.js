@@ -12,6 +12,7 @@ import PlanBici from "./components/PlanPage/PlanBici"
 import PlanMoto from "./components/PlanPage/PlanMoto"
 import TrabajaConNosotros from "./components/Trabaja/TrabajaConNosotros";
 import PlanProyecto from './components/PlanPage/PlanProyecto'
+import TrabajaHome from "./components/Trabaja/TrabajaHome";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/planmoto" element={<PlanMoto/>}/>
         <Route path="/trabajaconnosotros" element={<TrabajaConNosotros/>} />
         <Route path="/planproyecto" element={<PlanProyecto/>}/>
+        <Route path='/trabajahome' element={<TrabajaHome/>}/>
       </Routes>
       <Footer/>
     </div>
