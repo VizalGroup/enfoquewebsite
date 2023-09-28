@@ -6,6 +6,7 @@ import './TrabajaHome.css'; // Importa tu archivo CSS
 
 function TrabajaHome() {
   return (
+    <div className="trabaja-fondo">
     <div className="trabaja-home">
       <h2 className="h2">Sumate a nuestro equipo de trabajo</h2>
       <div className="card-container-home">
@@ -31,6 +32,7 @@ function TrabajaHome() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
