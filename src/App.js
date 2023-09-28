@@ -8,9 +8,10 @@ import Home from './components/Home/Home';
 import Footer from "./components/Footer/Footer";
 import ElectroPlan from "./components/PlanPage/ElectroPlan";
 import EnfoquePlan from "./components/PlanPage/EnfoquePlan";
-import EnfoqueBici from "./components/PlanPage/EnfoqueBici"
-import EnfoqueMoto from "./components/PlanPage/EnfoqueMoto"
+import PlanBici from "./components/PlanPage/PlanBici"
+import PlanMoto from "./components/PlanPage/PlanMoto"
 import TrabajaConNosotros from "./components/Trabaja/TrabajaConNosotros";
+import PlanProyecto from './components/PlanPage/PlanProyecto'
 
 function App() {
   return (
@@ -22,9 +23,10 @@ function App() {
         <Route path="/payment" element={<PaymentMethods />} />
         <Route path="/electroplan" element={<ElectroPlan />} />
         <Route path= "/enfoqueplan" element={<EnfoquePlan />} />
-        <Route path="/enfoquebici" element={<EnfoqueBici/>}/>
-        <Route path="/enfoquemoto" element={<EnfoqueMoto/>}/>
+        <Route path="/planbici" element={<PlanBici/>}/>
+        <Route path="/planmoto" element={<PlanMoto/>}/>
         <Route path="/trabajaconnosotros" element={<TrabajaConNosotros/>} />
+        <Route path="/planproyecto" element={<PlanProyecto/>}/>
       </Routes>
       <Footer/>
     </div>

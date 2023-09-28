@@ -1,19 +1,25 @@
 
 .nav {
-    background: rgb(36, 36, 35);
-    display: flex;
-    justify-content: flex-start;
-   
+  background: rgb(36, 36, 35);
+  display: flex;
+  justify-content: space-between; /* Cambio aquí para separar el logo y las rutas */
+  align-items: center; /* Centra verticalmente el contenido */
+  padding: 10px 0; /* Añade un poco de espacio en la parte superior e inferior */
+}
 
-  
-  }
-  
-  .cont-lg {
-    max-width: 90%;
-    width: 992px;
-    margin: 20px auto;
-    overflow: hidden;
-  }
+.cont-lg {
+  max-width: 90%;
+  width: 992px;
+  margin: 0 auto;
+  display: flex; /* Agregamos display flex para alinear los elementos */
+  align-items: center; /* Centra verticalmente el contenido */
+}
+
+.logo img {
+  width: 80px; /* Ajusta el ancho según tu preferencia */
+  height: auto; /* Ajusta la altura de forma proporcional al ancho */
+  margin-right: 20px; /* Ajusta el margen derecho para separar el logo de los elementos de navegación */
+}
   
   .hamburger {
     display: none; 

@@ -1,16 +1,48 @@
-.footer{
+.footer {
     background: orange;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide el footer en tres columnas */
     justify-content: flex-start;
-    height: 130px;
+    height: auto; /* Ajusta la altura automáticamente según el contenido */
     margin-top: 100px;
-   
-}
-.redes{
+  }
+  
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  
+  .menu-items ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-items li {
+    margin: 5px 0;
+  }
+  
+  /* Cambia el color de los enlaces dentro de los elementos li */
+  .menu-items li a {
+    color: whitesmoke;
+    text-decoration: underline; /* Puedes mantener el subrayado */
+  }
+  
+  .texto-footer {
+    color: whitesmoke;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 15px;
+  }
+  
+  .redes {
     font-size: 30px;
-    margin-top: 50px;
     display: flex;
     justify-content: center;
     gap: 30px;
     margin-bottom: 50px;
-}
+  }
+  
