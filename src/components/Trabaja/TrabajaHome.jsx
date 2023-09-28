@@ -8,7 +8,7 @@ function TrabajaHome() {
   return (
     <div className="trabaja-fondo">
     <div className="trabaja-home">
-      <h2 className="h2">Sumate a nuestro equipo de trabajo</h2>
+      <h2  style={{marginBottom:'50px'}} className="h2">Sumate a nuestro equipo de trabajo</h2>
       <div className="card-container-home">
         <div className="card-home">
           <img src={productor} alt="" className="card-image-home" />
