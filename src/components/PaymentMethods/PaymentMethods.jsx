@@ -10,7 +10,7 @@ export default function PaymentMethods() {
   // Estamos a la espera de información del cliente con la entidad bancaria que trabaja para desarrollar este componente, esto es un ejemplo para mostrarle en el sprint
 
   return (
-    <div>
+    <div >
       <h3 className={style.title}>Métodos de Pago</h3>
       <div className={style.container}>
         <Card className={style.card}>

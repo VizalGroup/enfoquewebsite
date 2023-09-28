@@ -23,16 +23,16 @@ function Nav() {
             </a>
           </li>
           <li>
-            <a href="#nuestros-planes">Nuestros Planes</a>
+            <a href="/">Nuestros Planes</a>
           </li>
           <li>
-            <a href="#metodos-de-pago">Metodos de pago</a>
+            <a href="/">Métodos de pago</a>
           </li>
           <li>
-            <a href="#trabaja">Trabaja con Nosotros</a>
+            <a href="/trabajaconnosotros">Trabaja con Nosotros</a>
           </li>
           <li>
-            <a href="#footer">Contacto</a>
+            <a href="/">Contacto</a>
           </li>
         </ul>
       </div>

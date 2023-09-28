@@ -5,7 +5,7 @@ import PaymentMethods from '../PaymentMethods/PaymentMethods';
 
 import './Home.css';
 import Trabaja from '../Trabaja/Trabaja';
-import Contenido from '../Contenido/Contenido';
+import Contenido from '../Contenido/Contenido.jsx';
 
 function Home() {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -38,7 +38,7 @@ function Home() {
       <div>
       </div>
       <Contenido/>
-      <div id="nuestros-planes">
+      <div   className="color-fondo" id="nuestros-planes">
         <PlanesHome />
       </div>
       <div id="metodos-de-pago">

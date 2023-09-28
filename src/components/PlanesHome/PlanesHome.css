@@ -1,3 +1,9 @@
+.color-fondo{
+  background: rgb(31, 30, 30);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
 .carta-container {
     display: flex;
     flex-wrap: wrap;

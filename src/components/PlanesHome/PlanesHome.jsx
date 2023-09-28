@@ -9,13 +9,14 @@ import "./PlanesHome.css";
 function Cards() {
   return (
     <>
+    
       <h2 className="h2">NUESTROS PLANES</h2>
       <div className="carta-container">
         <div className="carta">
           <img src={card1} alt="" />
           <div className="carta-content">
-            <h3> Plan Enfoque Bici</h3>
-            <a href="/enfoquebici">
+            <h3> Plan Bici</h3>
+            <a href="/planbici">
             <button>Ver más</button>
             </a>
           </div>
@@ -23,8 +24,8 @@ function Cards() {
         <div className="carta">
           <img src={card2} alt="" />
           <div className="carta-content">
-            <h3>Plan Enfoque moto</h3>
-            <a href="/enfoquemoto">
+            <h3>Plan Moto</h3>
+            <a href="/planmoto">
             <button>Ver más</button>
             </a>
           </div>
@@ -32,8 +33,10 @@ function Cards() {
         <div className="carta">
           <img src={card3} alt="" />
           <div className="carta-content">
-            <h3>Título de la Tarjeta 2</h3>
-            <button>Botón 2</button>
+            <h3>Plan Proyecto</h3>
+            <a href="/planproyecto">
+            <button>Ver más</button>
+            </a>
           </div>
         </div>
         <div className="carta">
@@ -56,6 +59,7 @@ function Cards() {
         </div>
         {/* Repite lo mismo para las otras tarjetas */}
       </div>
+     
     </>
   );
 }
