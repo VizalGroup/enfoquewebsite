@@ -29,7 +29,7 @@ function Nav() {
             <a href="/">Métodos de pago</a>
           </li>
           <li>
-            <a href="/trabajaconnosotros">Trabaja con Nosotros</a>
+            <a href="/trabajahome">Trabaja con Nosotros</a>
           </li>
           <li>
             <a href="/">Contacto</a>
