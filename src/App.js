@@ -30,7 +30,9 @@ function App() {
         <Route path="/planproyecto" element={<PlanProyecto/>}/>
         <Route path='/trabajahome' element={<TrabajaHome/>}/>
       </Routes>
+      <div id="contacto">
       <Footer/>
+      </div>
     </div>
   );
 }

@@ -1,16 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import style from "./TrabajaConNosotros.module.css";
+import { useLocation } from "react-router-dom";
 
 export default function TrabajaConNosotros() {
+  const { search } = useLocation();
+  const queryParams = new URLSearchParams(search);
+  const cargoParam = queryParams.get("cargo");
   const [formData, setFormData] = useState({
     nombre: "",
-    cargo: "",
+    cargo: cargoParam || "",
     telefono: "",
     email: "",
     mensaje: "",
   });
+
+  // Utiliza el valor de cargoParam para preseleccionar la opción en el campo de selección de cargo
+  useEffect(() => {
+    if (cargoParam) {
+      setFormData((prevFormData) => ({
+        ...prevFormData,
+        cargo: cargoParam,
+      }));
+    }
+  }, [cargoParam]); // Agregar formData al arreglo de dependencias
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -132,19 +146,17 @@ export default function TrabajaConNosotros() {
             </div>
             <div className="form-group">
               <label htmlFor="cargo">Cargo</label>
-              <select
+              <input
+                type="text"
                 className="form-control"
                 id="cargo"
                 name="cargo"
                 value={formData.cargo}
                 onChange={handleChange}
+                readOnly
+                style={{ color: "grey" }}
                 required
-              >
-                <option value="">Selecciona un cargo</option>
-                <option value="Productor/Asesor">Productor/Asesor</option>
-                <option value="Organizador">Organizador</option>
-                <option value="Agente Oficial">Agente Oficial</option>
-              </select>
+              />
             </div>
             <div className="form-group">
               <label htmlFor="telefono">Teléfono</label>
@@ -155,7 +167,7 @@ export default function TrabajaConNosotros() {
                 name="telefono"
                 value={formData.telefono}
                 onChange={handleChange}
-                pattern="[0-9+\s]+"
+                pattern="^[0-9+]+$" // Patrón más restrictivo
                 required
               />
             </div>
@@ -188,8 +200,8 @@ export default function TrabajaConNosotros() {
 
             <br />
             <p className={style.alert}>
-              Presiona Enviar y te redirigirá a tu correo
-              electronico. Por favor adjunta tu Curriculum
+              Presiona Enviar y te redirigirá a tu correo electronico. Por favor
+              adjunta tu Curriculum
             </p>
             <button type="submit" className={style.button}>
               Enviar
