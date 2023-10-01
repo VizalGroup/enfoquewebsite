@@ -1,8 +1,8 @@
 .footer {
     background: orange;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Divide el footer en tres columnas */
-    justify-content: flex-start;
+    grid-template-columns: repeat(2, 1fr); /* Divide el footer en tres columnas */
+    justify-content: space-between;
     height: auto; /* Ajusta la altura automáticamente según el contenido */
     margin-top: 100px;
   }
