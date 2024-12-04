@@ -23,7 +23,7 @@ function Contenido() {
           <Image src={img} style={{width:'95%', marginTop:'50px', borderRadius:'10PX'}} alt="Imagen" />
         </div>
         <div className="col-md-6 d-flex align-items-center">
-          <p style={{fontSize:'20PX', backgroundColor:'rgba(245, 245, 245, 0.5)', marginTop:'20px',marginBottom:'20px', borderRadius:'10px', padding:'20px'}}>Enfoque es una empresa dedicada a fomentar el ahorro y la capitalización financiera de nuestros suscriptores, con una gama súper variada tanto en valores como en cantidad de cuotas, pensando siempre en las necesidades de nuestros clientes. ¡Completa el formulario y conoce nuestros planes de 24, 36, 48 cuotas y hasta 72 cuotas fijas y con entrega pactada, además podés ser el próximo adjudicado, cumplir tus sueños y no pagar más!!
+          <p style={{fontSize:'20PX', backgroundColor:'rgba(245, 245, 245, 0.5)', marginTop:'20px',marginBottom:'20px', borderRadius:'10px', padding:'20px'}}>Enfoque es una empresa dedicada a fomentar el ahorro y la Capitalización Financiera de nuestros suscriptores. Con una variada oferta tanto en valores como cantidad de cuotas. Pensando siempre en la necesidad de nuestros clientes. Completa el formulario y conoce nuestros planes de 12, 18, 24, 36 y 48 cuotas, siempre fijas, con la posibilidad de entrega pactada. Vos podés ser el próximo adjudicado, cumplir tus sueños y NO PAGAR MAS ‼️
 </p>
         </div>
       </div>

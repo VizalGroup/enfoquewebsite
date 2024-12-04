@@ -30,7 +30,7 @@ function Cards() {
             </a>
           </div>
         </div>
-        <div className="carta">
+        {/* <div className="carta">
           <img src={card3} alt="" />
           <div className="carta-content">
             <h3>Plan Proyecto</h3>
@@ -38,7 +38,7 @@ function Cards() {
             <button>Ver más</button>
             </a>
           </div>
-        </div>
+        </div> */}
         <div className="carta">
           <img src={card4} alt="" />
           <div className="carta-content">

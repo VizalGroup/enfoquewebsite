@@ -35,7 +35,7 @@ export default function ElectroPlan() {
             }}
           />
           <br />
-          <a href="https://gestionenfoque.online/sumate">
+          <a href="https://enfoquegestion.online/sumate">
             <button className={style.button}>Contáctanos</button>
           </a>
         </div>

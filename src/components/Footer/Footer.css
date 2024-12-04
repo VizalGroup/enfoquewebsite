@@ -46,3 +46,12 @@
     margin-bottom: 50px;
   }
   
+  .list {
+    list-style-type: none;
+    
+  }
+
+  .list li{
+    font-weight: bold;
+    margin: 10px 0px 0px 10px;
+  }

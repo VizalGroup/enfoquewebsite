@@ -27,7 +27,7 @@ export default function ElectroPlan() {
             acondicionado, juego de comedor y un sillon 3 cuerpos
           </p>
           <br />
-          <a href="https://gestionenfoque.online/sumate">
+          <a href="https://enfoquegestion.online/sumate">
             <button className="btn btn-warning" style={{ width: 'fit-content', padding: '1vw', fontSize: '24px'}}>Contáctanos</button>
           </a>
         </div>
