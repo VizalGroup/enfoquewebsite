@@ -30,7 +30,7 @@ export default function LotteryResultNumberShow() {
 			
     <div className={styles.cardContainer}> 
       <Card className={styles.lotteryCard}> 
-        <Card.Header className={styles.cardHeader}>Resultado de la Lotería de la ciudad de Buenos Aires</Card.Header>
+        <Card.Header className={styles.cardHeader}>Resultado de sorteo interno trimestral</Card.Header>
         <Card.Body>
           {data.map((item, index) => (
             <div key={index}>

@@ -55,16 +55,14 @@ export default function TrabajaConNosotros() {
         <div className="col-lg-8 offset-lg-2">
           <h3 className="text-center">Trabaja con Nosotros</h3>
           <p className="text-center">
-            Sumate a la empresa de capitalización financiera más innovadora del
-            mercado.
+            Sumate a la empresa de ahorro más innovadora del mercado.
           </p>
           <h4>¿Quiénes somos?</h4>
           <p>
-            Somos una empresa de capitalización financiera liderada por
-            excelentes profesionales con una amplia trayectoria en el rubro.
-            Nuestra misión es clara: acercar a nuestros suscriptores a cumplir
-            sus sueños y acompañar a nuestra fuerza de venta en su desarrollo y
-            éxito profesional.
+            Somos una empresa de ahorro liderada por excelentes profesionales
+            con una amplia trayectoria en el rubro. Nuestra misión es clara:
+            acercar a nuestros suscriptores a cumplir sus sueños y acompañar a
+            nuestra fuerza de venta en su desarrollo y éxito profesional.
           </p>
           <h4>Perfil del postulado</h4>
           <ul style={{ listStyle: "none" }}>

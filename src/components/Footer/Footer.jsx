@@ -32,9 +32,9 @@ function Footer() {
             <li>
               <a href="/planmoto">Plan Moto</a>
             </li>
-            <li>
+            {/* <li>
               <a href="/planproyecto">Plan Proyecto</a>
-            </li>
+            </li> */}
             <li>
               <a href="#trabaja">Trabaja con Nosotros</a>
             </li>

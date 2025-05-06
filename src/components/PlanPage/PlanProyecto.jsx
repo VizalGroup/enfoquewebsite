@@ -19,8 +19,10 @@ export default function PlanProyecto() {
 
         <div className="col-md-6">
           <p className={style.text}>
-          ¿Hace cuanto tenés en mente renovar o ampliar tu casa o quincho? ¡Enfoque te ofrece comenzar a ahorrar para poder cubrir todo el costo de materiales y si salís adjudicado <strong> NO PAGAS MÁS</strong>!
-
+            ¿Hace cuanto tenés en mente renovar o ampliar tu casa o quincho?
+            ¡Enfoque te ofrece comenzar a ahorrar para poder cubrir todo el
+            costo de materiales y si salís adjudicado{" "}
+            <strong> NO PAGAS MÁS</strong>!
           </p>
           <img
             src={enfoqueImg2}
